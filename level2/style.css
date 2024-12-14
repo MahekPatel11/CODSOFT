@@ -1,0 +1,189 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for proper alignment */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    padding: 20px 0;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.navbar nav ul li {
+    font-size: 18px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #1abc9c;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #d0846b; /* Vibrant gradient */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+/* Animated Gradient Text */
+.animated-text {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* background: linear-gradient(45deg, #ff6b6b, #f06595, #1abc9c); */
+    color: transparent;
+    animation: textAnimation 5s infinite alternate;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+   
+    background-color: #16a085;
+    transform: scale(1.1);
+}
+
+/* Features Section */
+.features {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card {
+    background-color: #ecf0f1;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 50px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* About Section */
+.about {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    background-color: #44576b;
+    color: white
+}

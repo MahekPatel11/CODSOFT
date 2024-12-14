@@ -1,0 +1,255 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(to right, #6a11cb, #677286);
+    color: white;
+    padding: 20px 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.header ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    border-radius: 10px;
+    margin: 20px;
+}
+.hero-content h2 {
+    font-size: 36px;
+    color: #333;
+}
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+}
+.hero .btn {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.hero .btn:hover {
+    background: #2575fc;
+}
+.hero-image {
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Ensure it's a square for perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits nicely within the circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+    
+}
+/* Cards Section */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.about {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+ 
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Circular Image for About Section */
+.about-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6a11cb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.about-image img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* About Content */
+.about-content {
+    max-width: 500px;
+    text-align: left;
+}
+.about-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+.about-details {
+    list-style: none;
+    padding: 0;
+}
+.about-details li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+.about-details strong {
+    color: #6a11cb;
+}
+/* About, Skills, and Projects Section Cards */
+.about-card, .skill-card, .project-card ,.resume-card{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.about-card:hover, .skill-card:hover, .project-card:hover,.resume-card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #6a11cb;
+    background: #ebf7ae;
+}
+.about-card img, .skill-card img, .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.skill-card h3, .project-card h3 , .resume-card h3{
+
+    font-size: 24px;
+    color: #6a11cb;
+    margin: 10px 0;
+    text-align: center;
+}
+.project-card .project-content {
+    padding: 15px;
+}
+.resume-card .resume-content {
+    padding: 15px;
+}
+.skills{
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.projects{
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+.resume{
+    text-align: center;
+    padding: 20px;
+}
+.contact a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Resume Section */
+.resume {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+    color: #333;
+}
+.resume h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+   
+}
+.resume-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6a11cb;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects */
+.btn:hover {
+    background-color: #2575fc;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Download Button Icon */
+.btn i {
+    margin-right: 10px;
+}
